@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline, Internal, External CSS</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #internalListElement {
+            color: blue;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>Different Ways to Apply CSS</h1>
+    <ol>
+        <li style="color: Green; background-color: pink;">Inline CSS</li>
+        <li id="internalListElement">Internal CSS</li>
+        <li id="externalListElement">External CSS</li>
+    </ol>
+    <p>CSS decides which style to apply using a priority system called specificity. The order is: element &lt; class &lt; id &lt; inline style. This means element styles are the weakest and inline styles are the strongest. If more than one style has the same priority, then the last written rule is applied.</p>
+</body>
+</html>
