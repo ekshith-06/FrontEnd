@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors In CSS</title>
+    <style>
+        /* Element Selector  */
+        div{
+            background-color: green;
+        }
+        /* Class Selector */
+        .red{
+            background-color: red;
+        }
+        /* ID Selector */
+        #pink{
+            background-color: pink;
+        }
+        /* Child Selector  */
+        div > p{
+            color:yellow
+        }
+
+        /* Descendant Selector  */
+
+        div span{
+            color: green;
+        }
+
+        /* Universal Selector */    
+        *{
+            margin:0px;
+            padding:0px;
+        }
+    </style>
+</head>
+<body>
+     <div>This is a div element</div>
+     <div class="red">This is a red div element i.e a div element with class red</div>
+     <div id="pink"> <p>This is a pink div element i.e a div element with id pink  <span> This is a span element </span></p></div>
+</body>
+</html>
