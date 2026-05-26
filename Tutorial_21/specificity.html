@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity and Cascading Algo in CSS</title>
+    <style>
+        p{
+            color:orange;
+        }
+        .red{
+            color:red;
+        }
+        .yellow{
+            color:yellow;
+        }
+        .blue{
+            color:blue;
+        }
+
+        /* AS this .blue class is the last one to be applied, it will override the previous color properties and the text will be displayed in blue. This is because of the cascading nature of CSS, where the last defined style takes precedence over earlier styles when there are conflicts. */
+    </style>
+</head>
+<body>
+     <h1 style="color:green" >Specificity and Cascading Algo in CSS</h1>
+     <p class="red yellow blue">
+        Specificity is a mechanism in CSS that determines which styles are applied to an element when there are conflicting rules. It is based on the types of selectors used in the CSS rules. The more specific a selector is, the higher its specificity, and it will take precedence over less specific selectors.
+     </p>
+
+     <p>
+        cascading is the process by which the browser determines which CSS rules to apply when there are multiple rules that could apply to the same element. The browser uses a set of rules to determine which styles take precedence, including specificity, source order, and importance (e.g., !important declarations). The cascading algorithm ensures that the most specific and relevant styles are applied to elements on a webpage.
+     </p>
+     <div>
+        <h2>Understanding CSS Specificity Priority</h2>
+        <ol>
+            <li>Inline styles</li>
+            <li>ID selectors</li>
+            <li>Class selectors</li>
+            <li>Element selectors</li>
+        </ol>
+     </div>
+</body>
+</html>
