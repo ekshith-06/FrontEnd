@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Sizing Units</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            box-sizing: border-box;
+            background-color: aquamarine;
+            /* Resolution of my monitor  */
+            /* width: 1920px;  */
+            /* this vw is view port width and relative unit in css and it is equal to 1% of the width of the viewport. So if the viewport is 1920px wide, then 1vw would be equal to 19.2px.  View Port means the visible area of the browser window i.e user screen*/
+            width: 80vw;
+            min-height: 80vh;
+            border: 2px solid black;
+            font-size: 16px;
+            margin:auto;
+        }
+        .container{
+            box-sizing: border-box;
+            width: 80vw;
+            background-color: lightcoral;
+            margin:20px auto;
+            border: 2px solid black;
+            min-height: 30vh;
+            font-size:2 rem;
+            
+        }
+        .box p{
+            font-size: 1.3em;
+        }
+        html{
+            font-size: 12px;
+        }
+        .myCont{
+            width: 80vw;
+            background-color: lightgreen;
+            margin: 25px auto;
+            border: 1px solid black;
+            height: 10vh;
+            font-size: 2rem;
+        }
+        .container > div{
+            margin: 10px;
+            width: 50%;
+            border: 2px solid black;
+        }
+        #para{
+            width: 50%;
+            border: 2px solid black;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        This is a Box
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit sint, eligendi optio inventore facilis nobis at est fugit rerum totam, quae accusamus dignissimos, laudantium iste omnis ducimus vitae quo doloremque ratione nihil. Deleniti tenetur accusamus natus! Fugit, perferendis voluptatum cupiditate dignissimos incidunt officiis totam assumenda enim culpa nesciunt obcaecati minima facere dolor molestias illo commodi, quis voluptatibus doloribus quisquam omnis dolorum! Aliquid explicabo enim ipsa iste ullam quos atque odit sapiente distinctio veniam. Corporis, maiores aliquam vero ab ipsam laudantium praesentium ad, repellendus sed, consequuntur perspiciatis veritatis consectetur animi quas eum. Soluta, recusandae asperiores dolorem nihil, amet nemo est alias perspiciatis, neque cumque optio deserunt dicta debitis repellendus tempore eius laudantium vero voluptatibus error harum. Doloribus dolorum fugiat odit ex ducimus velit animi, distinctio reprehenderit cumque, at assumenda nemo mollitia laborum consequuntur quibusdam unde? Totam libero dolore eligendi omnis rerum odit fuga voluptatibus quisquam sapiente? Porro suscipit esse perspiciatis? Debitis veritatis excepturi odio cumque placeat suscipit. Vero amet odio pariatur blanditiis reiciendis, doloribus consectetur quo similique et ratione vitae cum minima deleniti, atque fugiat minus eius, sed soluta natus! Incidunt amet, dolor cum facere, repellat, eum maxime rem enim labore natus nam porro id dolore minima corrupti! Fugit ut, quibusdam saepe eum aperiam minima aliquid odit atque animi voluptates voluptatem temporibus repellendus quas nisi obcaecati aliquam, molestiae distinctio. Officiis dolorum ipsa optio voluptate nostrum facilis iusto quae numquam sit. Natus sapiente quod quam temporibus minima quidem, omnis esse accusantium fugiat obcaecati perferendis tenetur rerum, nisi impedit officia reprehenderit? Dignissimos quis iste, nihil reiciendis inventore tenetur, at ipsum voluptates ducimus labore, fuga dolorem commodi natus debitis culpa officiis? Error eaque maiores, minus provident dicta aperiam exercitationem dolorem voluptatum at a incidunt, rem iusto! Sit, minus placeat veniam dolorum enim mollitia aspernatur voluptates quod natus quaerat sint deleniti facere ipsa blanditiis distinctio qui quo ad sed exercitationem soluta culpa, consectetur rem! Odit impedit doloremque alias, quibusdam explicabo similique sapiente et reiciendis animi quasi, sunt consectetur magni. Eius corrupti optio eos cum assumenda, recusandae cupiditate ut esse. Nesciunt ipsa molestias blanditiis, voluptatibus eaque inventore est dolorem, dolore repudiandae nemo velit rem tempore possimus!</p>
+    </div>
+
+    <div class="container">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor, ea porro molestias quasi soluta ullam harum odio quam quia quidem odit ipsa animi. Optio, recusandae! Id beatae, harum non, magni perspiciatis, quo ut neque velit dolorum quaerat consequatur earum. Modi accusantium quam a recusandae fugit.
+        <div>
+            This is paragraph inside container and its width is set in % means it will inherit the width of parent container here set to 50% of its parent.
+            <div id="para">This is another para inside para and its width is set in % and it will get 50% of its parent para </div>
+        </div>
+    </div>
+    <div class="myCont">
+        This is another container.
+    </div>
+</body>
+</html>
