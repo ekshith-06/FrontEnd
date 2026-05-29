@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List Styling Using CSS</title>
+    <style>
+       nav ul li{
+
+        /* Use list style for all combinations of type , positon , color or use individual properties */
+        list-style-type: square;
+        list-style-type: "❤️";
+        background-color: pink;
+        list-style-position: inside;
+        /* list-style-position: inside; // marker also gets background color as its positoin is included in list item and it also gets the background color of list item */
+        border: 2px solid black;
+       }
+    </style>
+</head>
+<body>
+    <p>List is a combination of marker and item, The position of marker is by default outside the item and can be made included to list item i.e content</p>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+</body>
+</html>
