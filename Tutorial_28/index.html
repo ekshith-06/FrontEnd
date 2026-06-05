@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Property in CSS </title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .parent {
+            position: relative;
+            margin: 10px;
+            padding: 10px;
+            border: 2px solid black;
+        }
+
+        .box {
+            border: 2px solid black;
+            height: 103px;
+            width: 80vw;
+            padding: 3px;
+            margin: 3px;
+        }
+
+        .box1 {
+            color: black;
+            background-color: aqua;
+
+        }
+
+        .box2 {
+            background-color: azure;
+            /* Elements are positioned relative to the normal position in the document */
+            position: relative;
+            color: black;
+            top: 35px;
+            left: 3px;
+        }
+
+        .box3 {
+            background-color: antiquewhite;
+            position: relative;
+            z-index: 2;
+            color: black;
+        }
+
+        .box4 {
+            background-color: purple;
+            position: absolute;
+            color: black;
+            top: 35px;
+
+        }
+
+        .parent2 {
+            position: relative;
+            margin: 10px;
+            padding: 10px;
+            top: 120px;
+            border: 2px solid black;
+            height: 1000px;
+        }
+        .box5{
+            background-color: pink;
+            color:black;
+            position: sticky;
+            z-index: 2;
+            top: 0px;
+        }
+        .box6{
+            background-color: lightgreen;
+            color:black;
+        }
+        .header{
+            background-color: lightcoral;
+            color:blcak;
+            text-align: center;
+            z-index: 4; 
+            width: 100vw;
+            top:0px;
+            position: fixed;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="box box1"> This is Box 1 Static Positioning Cant apply top , left, right, or bottom properties</div>
+        <div class="box box2"> This is Box 2 Elements are positioned relative to the normal position in the document Can apply top , left, right, or bottom properties</div>
+        <div class="box box3"> This is Box 3 When there are multiple overlapping elements, the z-index helps in deciding the order of
+            their visibility. The element having the highest value of z-index is shown first, followed by the other
+            elements</div>
+        <div class="box box4"> This is Box 4 Elements are positioned relative to the closest positioned ancestor (parent), which means
+            we need to have a parent element with a positioning other than 'static' || position: absolute positions an
+            element relative to the nearest ancestor that has position: relative, absolute, fixed, or sticky. If none
+            exists, it is positioned relative to the page/viewport. It is also removed from the normal document flow.
+        </div>
+    </div>
+
+
+    <div class="parent2">
+        <div class="box box5"> This is Box 5 Postion Sticky Means It allows an element to become "stuck" to the top or bottom of its container when scrolling, but it behaves like relative positioning within the container until it reaches a specified offset. </div>
+        <div class="box box6"> This is Box 6 </div>
+    </div>
+
+    <div class="header">This is the header (Fixed Positioning)</div>
+</body>
+
+</html>
