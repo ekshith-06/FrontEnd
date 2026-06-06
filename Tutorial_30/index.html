@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables in CSS</title>
+    <style>
+        :root {
+            --primary-color: green;
+            --secondary-color: rgb(184, 231, 184);
+            --default-font: "Quicksand", sans-serif;
+            --default-padding: 10px;
+            --default-border:2px solid black;
+            --defalult-margin:3px;
+        }
+
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .nav {
+            background-color: var(--primary-color);
+        }
+
+        .nav ul {
+            display: flex;
+
+
+            list-style-type: none;
+        }
+
+        .nav li {
+            margin: var(--defalult-margin);
+            padding: var(--default-padding);
+            border: var(--default-border);
+        }
+
+        .container {
+            background-color: var(--secondary-color);
+            font-family: var(--default-font);
+            padding: var(--default-padding);
+        }
+
+        .container2 {
+            /* // You can also override the global variables by declaring new values for them in a specific block. These new values will only apply within that block and will not affect the global variables outside of it. */
+            --background-color: rgb(231, 184, 184);
+            --color:black;
+        }
+        .container2 p {
+            background-color: var(--background-color);
+            color: var(--color);
+            padding: var(--default-padding);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <h1>Variables in CSS</h1>
+        <p>CSS variables, also known as custom properties, are a powerful feature that allows you to store and reuse values throughout your CSS code. They are defined using the -- prefix and can be accessed using the var() function. They are declared in the :root pseudo-class these are global variables. The same variable can be used in multiple places throughout your CSS. The variable can also be delcared as local varibles in each block individually.i.e  You can also override the global variables by declaring new values for them in a specific block. These new values will only apply within that block and will not affect the global variables outside of it</p>
+    </div>
+
+    <div class="container2">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam hic iusto facere. A soluta neque, ex omnis obcaecati esse illum. Aliquid quia labore necessitatibus, nulla dignissimos fugiat delectus ut illum. Enim nesciunt repudiandae corporis eius dolore sequi consectetur ducimus, at ab, officia consequuntur, modi nemo?</p>
+    </div>
+
+</body>
+
+</html>
