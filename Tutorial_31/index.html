@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries In CSS</title>
+    <style>
+        body{
+            display:flex;
+        }
+        .body{
+            background-color: lightblue;
+            border: 2px solid black;
+            height: 70vh;
+            width: 70vw;
+        }
+        .body2{
+            background-color: lightgreen;
+            border: 2px solid black;
+            height: 70vh;
+            width: 70vw;
+        }
+        /* Media queries allow you to apply different styles to a webpage based on the characteristics of the device or screen size. This is particularly useful for creating responsive designs that adapt to various screen sizes, such as desktops, tablets, and mobile devices. */
+        @media (max-width:600px){
+            .body{
+                background-color: lightcoral;
+            }
+        }
+
+        @media (min-width:700px){
+            .body2{
+                background-color: lightpink;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="body">Body-1</div>
+    <div class="body2">Body-2</div>
+</body>
+</html>
