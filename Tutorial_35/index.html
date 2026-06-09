@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More On Selectors in CSS</title>
+    <style>
+        body{
+            background-color: pink;
+        }
+
+        .boxes *{
+            padding: 20px;
+            margin:8px;
+            border :2px solid grey;
+        }
+        .box:first-child{
+            /* If .box is the first child of its parent then apply the styles to it */
+            background-color: red;
+        }
+        .box:nth-child(3){
+            background-color: green;
+        }
+        .box:nth-child(2n){
+            background-color: yellow;
+        }
+
+        .boxes::before{
+            content:"I am Before";
+        }
+
+        .boxes::after{
+            content:"I am After";
+        }
+
+        ::selection{
+            background-color: aqua;
+            color:black;
+        }
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div class="box">Hey I am a Box</div>
+        <div class="box">Hey I am a Box</div>
+        <div class="box">Hey I am a Box</div>
+    </div>
+</body>
+</html>
