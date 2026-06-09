@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Layout Design Using CSS</title>
+    <style>
+        *{
+            margin:0px;
+            padding: 0px;
+        }
+
+        .nav{
+            background-color: aqua;
+            position: sticky;
+            top:0;
+        }
+        .nav ul{
+            list-style: none;
+        }
+        .nav ul li{
+            display: inline-block;
+            padding: 6px;
+        }
+
+        .boxes{
+            background-color: green;
+            margin:4px;
+            box-sizing: border-box;
+            display: flex;
+            border: 2px solid black;
+        }
+        .box{
+            border:2px solid black; 
+            width:350px;
+            height:270px;
+        }
+        .box1{
+            background-color: pink;
+            text-align: center;
+            margin: auto;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            padding:5px;
+        }
+        .box2{
+            background-color: blueviolet;
+            text-align: center;
+            margin: auto;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            padding:5px;
+        }
+
+        .middle{
+            border-radius: 10px;
+            border: 2px solid black;
+            text-align: center;
+            width:80vw;
+            height:65px;
+            margin:10px auto;
+        }
+
+        .footer{
+            background-color: brown;
+            text-align: center;
+            border:2px solid black;
+            height: 60px;
+        }
+        
+    </style>
+</head>
+<body>
+   <div class="nav">
+    <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+        <li>Services</li>
+    </ul>
+   </div> 
+
+   <div class="boxes">
+    <div class="box box1">This Is Box 1</div>
+    <div class="box box2">This Is Box 2</div>
+   </div>
+
+   <div class="middle">This is Middle</div>
+   <div class="footer">This is a Footer</div>
+</body>
+</html>
