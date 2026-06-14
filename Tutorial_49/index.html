@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Fit And Postion In CSS</title>
+    <style>
+
+        body{
+            border: 2px solid purple;
+            display: flex;
+            gap:100px;
+            justify-content: center;
+            align-items: center;
+        }
+        .container{
+            height: 334px;
+            width: 388px;
+            background-color: azure;
+            border: 2px solid black;
+        }
+
+        .two{
+            background-image: url("https://images.unsplash.com/photo-1575936123452-b67c3203c357?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D");
+            background-position: center;
+            background-size: cover;
+        }
+
+        img{
+            height: 334px;
+            width: 388px;
+            /* cover will cover the image in the given width and height it will trim some img use when  You want the container to be completely filled  */
+            /* object-fit: cover;  */
+
+            /* contain shows the entire image  , You want the whole image to be visible then use this in small container if  */
+            object-fit: contain;
+            object-position: center;
+            /* object-position: top right; */
+            /* object-fit: fill; */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://images.unsplash.com/photo-1575936123452-b67c3203c357?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D" alt="img">
+    </div>
+
+    <div class="container two">
+
+    </div>
+</body>
+</html>
