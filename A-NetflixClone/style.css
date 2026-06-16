@@ -111,7 +111,8 @@ nav img {
 .normal-btn {
     display: flex;
     align-items: center;
-    gap: 50px;                              /* small fixed gap between text and arrow */
+    gap: 50px;
+    /* small fixed gap between text and arrow */
     border: 1px solid grey;
     font-size: 8px;
     font-weight: bold;
@@ -120,17 +121,18 @@ nav img {
     background-color: rgba(23, 23, 23, 0.2);
 }
 
-
-
 input {
     padding: 7px 24px;
     font-size: 8px;
     font-weight: bold;
-    padding: 9px 134px 9px 12px;
+    padding: 10px 120px 10px 12px;
     background-color: rgba(23, 23, 23, 0.2);
+    border-radius: 2px;
+    border: 1px solid rgba(246, 238, 238, 0.5);
 }
 
 .btn-red {
+    cursor: pointer;
     font-size: 14px;
     display: flex;
     justify-content: center;
@@ -141,8 +143,274 @@ input {
 }
 
 .btn-red-small {
+    cursor: pointer;
     font-size: 8px;
-    font-weight:bold;
-    padding:4px 7px;
+    font-weight: bold;
+    padding: 4px 7px;
     background-color: #E50914;
+}
+
+.text {
+    color: white;
+}
+
+.first {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container .box {
+    display: flex;
+    -webkit-text-stroke: 1px white;
+    align-items: end;
+    width: 200px;
+    height: 200px;
+    color: black;
+    font-size: 70px;
+    font-weight: bolder;
+}
+
+.container .box1 {
+    width: 130px;
+    height: 190px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 3px;
+    background-image: url(Assets/images/akshayImg.webp);
+}
+
+.container .box2 {
+    width: 130px;
+    height: 190px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 3px;
+    background-image: url(Assets/images/koreanImg.webp);
+}
+
+.container .box3 {
+    width: 130px;
+    height: 190px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 3px;
+    background-image: url(Assets/images/img3.webp);
+}
+
+.container .box4 {
+    width: 130px;
+    height: 190px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 3px;
+    background-image: url(Assets/images/img4.webp);
+}
+
+.container .box5 {
+    width: 130px;
+    height: 190px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 3px;
+    background-image: url(Assets/images/dhurandhar2img.webp);
+}
+
+.container {
+    display: flex;
+    gap: 10px;
+}
+
+.container .next {
+    display: flex;
+    align-items: center;
+}
+
+.container .next span {
+    display: flex;
+    align-items: center;
+    height: 70px;
+    border-radius: 7px;
+    background-color: rgba(255, 255, 255, 0.1)
+}
+
+.text {
+    margin-left: 180px;
+    margin-right: auto;
+    font-size: 20px;
+    font-family: 'NetflixSans';
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+.text-2 {
+    color: white;
+    margin-left: 180px;
+    margin-right: auto;
+    font-size: 18px;
+    font-family: 'NetflixSans';
+    font-weight: bold;
+    margin-top: 40px;
+    padding-bottom: 20px;
+}
+
+
+.label {
+    border-radius: 10px;
+    width: 170px;
+    min-height: 190px;
+    color: white;
+    background-color: #1a1a2e;
+    display: flex;
+    /* add this */
+    flex-direction: column;
+    /* add this */
+}
+
+.label .tb1 {
+    color: white;
+    font-family: 'NetflixSans';
+    padding-left: 10px;
+    padding-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.label .tb2 {
+    color: grey;
+    font-family: 'NetflixSans';
+    font-size: 9px;
+    padding: 5px 15px;
+}
+
+.container2 {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.label .icon {
+    display: flex;
+    justify-content: end;
+    margin-top: auto;
+}
+
+ .tb {
+    font-family: 'NetflixSans';
+    font-size: 18px;
+    color: white;
+    margin-left: 205px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+
+
+}
+
+.faq{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+}
+.list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 15px;
+    font-size: 14px;
+    width: 60vw;
+    height: 45px;
+    background-color: rgba(255, 255, 255, 0.2);
+    font-family: 'NetflixLighter';
+    color:white;
+}
+
+.tb4{
+        color: white;
+        font-family:'NetflixSans';
+        font-size: 9px;
+        margin-top: 40px;
+}
+
+.section3{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    gap:10px;
+}
+
+.another{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    align-items: center;
+}
+
+.another input{
+    width: 200px;
+}
+
+.getstarted{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:'NetflixSans' ;
+    background-color: #E50914;
+    color: white;
+    padding: 0 10px;
+    border-radius: 3px;
+    border: none;
+    height: 30px;
+}
+
+ footer .contact{
+    color: grey;
+    font-size: 12px;
+    margin-left: 200px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+ a ,.new1,.new2{
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 8px;
+    font-family: 'NetflixLighter';
+}
+
+.footerlist div{
+    height: 120px;
+    width: 170px;
+}
+.footerlist{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerlist ul{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    list-style: none;
+}
+
+.buttonss{
+    margin-left: 200px;
+}
+
+.new1{
+    width: 100px;
+    margin-top: 10px;
+    margin-left: 200px;
+}
+
+.new2{
+    margin-top: 10px;
+    margin-left: 200px;
+
+    width: 300px;
 }
