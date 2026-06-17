@@ -19,7 +19,7 @@ body {
 nav {
     position: relative;
     z-index: 10;
-    height: 50px;
+    height: 79px;
     display: flex;
     width: 65vw;
     margin: auto;
@@ -29,7 +29,7 @@ nav {
 
 nav img {
     color: red;
-    width: 85px;
+    width: 133px;
 }
 
 .main .box {
@@ -51,7 +51,7 @@ nav img {
     align-items: center;
     position: relative;
     z-index: 11;
-    gap: 22px;
+    gap: 35px;
     color: #FFFFFF;
     font-family: 'NetflixSans';
 }
@@ -71,20 +71,20 @@ nav img {
 }
 
 .text-box>:nth-child(1) {
-    width: 400px;
+    width: 625px;
     font-weight: bold;
-    font-size: 36px;
+    font-size: 56px;
     text-align: center;
 }
 
 .text-box>:nth-child(2) {
     font-weight: 300;
-    font-size: 12px;
+    font-size: 19px;
 }
 
 .text-box>:nth-child(3) {
     font-weight: 100;
-    font-size: 9px;
+    font-size: 14px;
     font-family: 'NetflixLighter';
 }
 
@@ -96,7 +96,7 @@ nav img {
 .btn {
     border-radius: 2px;
     border: none;
-    padding: 3px 8px;
+    padding: 5px 13px;
     font-weight: bold;
     color: white;
 }
@@ -114,18 +114,18 @@ nav img {
     gap: 50px;
     /* small fixed gap between text and arrow */
     border: 1px solid grey;
-    font-size: 8px;
+    font-size: 13px;
     font-weight: bold;
     border-radius: 3px;
-    padding: 2px 12px;
+    padding: 4px 19px;
     background-color: rgba(23, 23, 23, 0.2);
 }
 
 input {
     padding: 7px 24px;
-    font-size: 8px;
+    font-size: 13px;
     font-weight: bold;
-    padding: 10px 120px 10px 12px;
+    padding: 16px 188px 16px 19px;
     background-color: rgba(23, 23, 23, 0.2);
     border-radius: 2px;
     border: 1px solid rgba(246, 238, 238, 0.5);
@@ -133,20 +133,20 @@ input {
 
 .btn-red {
     cursor: pointer;
-    font-size: 14px;
+    font-size: 23px;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 5px;
-    padding: 4px 16px 4px 12px;
+    padding: 6px 25px 6px 19px;
     background-color: #E50914;
 }
 
 .btn-red-small {
     cursor: pointer;
-    font-size: 8px;
+    font-size: 13px;
     font-weight: bold;
-    padding: 4px 7px;
+    padding: 6px 11px;
     background-color: #E50914;
 }
 
@@ -165,16 +165,16 @@ input {
     display: flex;
     -webkit-text-stroke: 1px white;
     align-items: end;
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     color: black;
-    font-size: 70px;
+    font-size: 88px;
     font-weight: bolder;
 }
 
 .container .box1 {
-    width: 130px;
-    height: 190px;
+    width: 204px;
+    height: 298px;
     background-size: contain;
     background-repeat: no-repeat;
     border-radius: 3px;
@@ -182,8 +182,8 @@ input {
 }
 
 .container .box2 {
-    width: 130px;
-    height: 190px;
+    width: 204px;
+    height: 298px;
     background-size: contain;
     background-repeat: no-repeat;
     border-radius: 3px;
@@ -191,8 +191,8 @@ input {
 }
 
 .container .box3 {
-    width: 130px;
-    height: 190px;
+    width: 204px;
+    height: 298px;
     background-size: contain;
     background-repeat: no-repeat;
     border-radius: 3px;
@@ -200,8 +200,8 @@ input {
 }
 
 .container .box4 {
-    width: 130px;
-    height: 190px;
+    width: 204px;
+    height: 298px;
     background-size: contain;
     background-repeat: no-repeat;
     border-radius: 3px;
@@ -209,8 +209,8 @@ input {
 }
 
 .container .box5 {
-    width: 130px;
-    height: 190px;
+    width: 204px;
+    height: 298px;
     background-size: contain;
     background-repeat: no-repeat;
     border-radius: 3px;
@@ -230,15 +230,15 @@ input {
 .container .next span {
     display: flex;
     align-items: center;
-    height: 70px;
+    height: 88px;
     border-radius: 7px;
     background-color: rgba(255, 255, 255, 0.1)
 }
 
 .text {
-    margin-left: 180px;
-    margin-right: auto;
-    font-size: 20px;
+    width: 60vw;
+    margin: 0 auto;
+    font-size: 31px;
     font-family: 'NetflixSans';
     font-weight: bold;
     padding-bottom: 20px;
@@ -246,20 +246,18 @@ input {
 
 .text-2 {
     color: white;
-    margin-left: 180px;
-    margin-right: auto;
-    font-size: 18px;
+    width: 60vw;
+    margin: 40px auto 0 auto;
+    font-size: 29px;
     font-family: 'NetflixSans';
     font-weight: bold;
-    margin-top: 40px;
     padding-bottom: 20px;
 }
 
-
 .label {
     border-radius: 10px;
-    width: 170px;
-    min-height: 190px;
+    width: 266px;
+    min-height: 298px;
     color: white;
     background-color: #1a1a2e;
     display: flex;
@@ -275,13 +273,13 @@ input {
     padding-right: 20px;
     margin-top: 20px;
     margin-bottom: 10px;
-    font-size: 16px;
+    font-size: 25px;
 }
 
 .label .tb2 {
     color: grey;
     font-family: 'NetflixSans';
-    font-size: 9px;
+    font-size: 14px;
     padding: 5px 15px;
 }
 
@@ -297,120 +295,118 @@ input {
     margin-top: auto;
 }
 
- .tb {
+.tb {
     font-family: 'NetflixSans';
-    font-size: 18px;
+    font-size: 29px;
     color: white;
-    margin-left: 205px;
-    margin-top: 40px;
-    margin-bottom: 10px;
-
-
+    width: 60vw;
+    margin: 40px auto 10px auto;
 }
 
-.faq{
+.faq {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 4px;
 }
-.list{
+
+.list {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-left: 10px;
-    padding-right: 15px;
-    font-size: 14px;
+    padding-left: 13px;
+    padding-right: 19px;
+    font-size: 23px;
     width: 60vw;
-    height: 45px;
+    height: 70px;
     background-color: rgba(255, 255, 255, 0.2);
     font-family: 'NetflixLighter';
-    color:white;
+    color: white;
 }
 
-.tb4{
-        color: white;
-        font-family:'NetflixSans';
-        font-size: 9px;
-        margin-top: 40px;
+.tb4 {
+    color: white;
+    font-family: 'NetflixSans';
+    font-size: 14px;
+    margin-top: 40px;
 }
 
-.section3{
+.section3 {
     display: flex;
     flex-direction: column;
     /* justify-content: center; */
     align-items: center;
-    gap:10px;
+    gap: 10px;
 }
 
-.another{
+.another {
     display: flex;
     justify-content: center;
     gap: 5px;
     align-items: center;
 }
 
-.another input{
-    width: 200px;
+.another input {
+    width: 313px;
 }
 
-.getstarted{
+.getstarted {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family:'NetflixSans' ;
+    font-family: 'NetflixSans';
     background-color: #E50914;
     color: white;
-    padding: 0 10px;
+    padding: 0 16px;
     border-radius: 3px;
     border: none;
-    height: 30px;
+    height: 48px;
+    font-size: 20px;
 }
 
- footer .contact{
+footer .contact {
     color: grey;
-    font-size: 12px;
-    margin-left: 200px;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    font-size: 19px;
+    width: 60vw;
+    margin: 40px auto;
 }
- a ,.new1,.new2{
+
+a, .new1, .new2 {
     color: rgba(255, 255, 255, 0.7);
-    font-size: 8px;
+    font-size: 13px;
     font-family: 'NetflixLighter';
 }
 
-.footerlist div{
-    height: 120px;
-    width: 170px;
+.footerlist div {
+    height: 150px;
+    width: 213px;
 }
-.footerlist{
+
+.footerlist {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.footerlist ul{
+.footerlist ul {
     display: flex;
     flex-direction: column;
     gap: 5px;
     list-style: none;
 }
 
-.buttonss{
-    margin-left: 200px;
+.buttonss {
+    width: 60vw;
+    margin: 0 auto;
 }
 
-.new1{
-    width: 100px;
-    margin-top: 10px;
-    margin-left: 200px;
+.new1 {
+    width: 60vw;
+    margin: 10px auto 0 auto;
 }
 
-.new2{
-    margin-top: 10px;
-    margin-left: 200px;
-
-    width: 300px;
+.new2 {
+    margin: 10px auto 0 auto;
+    width: 60vw;
 }
